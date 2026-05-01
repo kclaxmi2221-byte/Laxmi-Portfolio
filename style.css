@@ -1,5 +1,74 @@
+:root {
+  --body-bg: rgb(196, 240, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  inline-size: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex center {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .joti-one-regular {
   font-family: "Joti One", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.wrapper {
+  background: rgb(196, 240, 255);
+  min-height: 100vh;
+}
+
+/* <!--dark mode toggler -->*/
+
+/* <!--navbar -->*/
+header {
+  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.459);
+  position: sticky;
+  inset-block-start: 0;
+  background: var(--body-bg);
+}
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* <!--hero section -->*/
+
+/* <!--banner section -->*/
+
+/* <!--skills section -->*/
+
+/* <!--project section -->*/
+
+/* <!--about me section -->*/
+
+/* <!--contact section -->*/
+
+/* <!--footer section -->*/
