@@ -41,7 +41,7 @@ a {
 }
 
 .wrapper {
-  background: rgb(196, 240, 255);
+  background: var (--body-bg);
   min-height: 100vh;
 }
 
@@ -52,7 +52,7 @@ header {
   box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.459);
   position: sticky;
   inset-block-start: 0;
-  background: var(--body-bg);
+  background: rgba(128, 128, 128, 0.63);
 }
 .header {
   justify-content: space-between;
