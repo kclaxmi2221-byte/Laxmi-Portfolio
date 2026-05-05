@@ -49,10 +49,10 @@ a {
 
 /* <!--navbar -->*/
 header {
-  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.459);
-  position: sticky;
-  inset-block-start: 0;
-  background: rgba(128, 128, 128, 0.63);
+  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.445);
+  position: static;
+  top: 0;
+  background: var(--body-bg);
 }
 .header {
   justify-content: space-between;
