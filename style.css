@@ -1,10 +1,13 @@
+/* ROOT */
 :root {
   --body-bg: rgb(196, 240, 255);
+  --primary: #0077ff;
 }
 
 html {
   scroll-behavior: smooth;
 }
+/* GLOBAL */
 * {
   box-sizing: border-box;
 }
@@ -13,12 +16,14 @@ body {
 }
 
 .container {
-  inline-size: 80%;
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
 }
-.flex {
+
+.menu ul {
+  list-style: none;
   display: flex;
-  gap: 1rem;
 }
 .flex center {
   justify-content: center;
@@ -29,11 +34,11 @@ body {
   display: grid;
   gap: 1rem;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
-
 .joti-one-regular {
   font-family: "Joti One", serif;
   font-weight: 400;
@@ -46,20 +51,86 @@ a {
 }
 
 /* <!--dark mode toggler -->*/
+[for="darkmode"] {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
+
+[for="darkmode"]:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
 
 /* <!--navbar -->*/
+
 header {
-  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.445);
-  position: static;
-  top: 0;
   background: var(--body-bg);
+  border-bottom: 1px solid #ddd; /* clean border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.432); /* subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 0;
 }
 
-/* <!--hero section -->*/
+menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  max-inline-size: 1100px;
+  margin: auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.divider {
+  color: #ff002b;
+  margin: 5px;
+}
+
+.title {
+  font-size: 20px;
+  color: #444;
+}
+
+/* RIGHT SIDE */
+.menu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* LINKS */
+.menu a {
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #ff000d;
+}
+
+/*<!--hero section -->*/
 
 /* <!--banner section -->*/
 
