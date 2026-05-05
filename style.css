@@ -41,8 +41,8 @@ a {
 }
 
 .wrapper {
-  background: var (--body-bg);
-  min-height: 100vh;
+  background: var(--body-bg);
+  min-block-size: 100vh;
 }
 
 /* <!--dark mode toggler -->*/
