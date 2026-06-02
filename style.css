@@ -1,7 +1,13 @@
 /* ROOT */
 :root {
-  --body-bg: rgb(196, 240, 255);
-  --primary: #0077ff;
+  --body-bg: rgba(0, 110, 255, 0.253);
+  --color--dark: black;
+
+  --body-bg-dark: rgb(212, 242, 252);
+  --text-color: var(--color-dark);
+
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
 }
 
 html {
@@ -121,16 +127,27 @@ menu ul {
   padding: 0;
 }
 /* LINKS */
-.menu a {
-  font-size: 16px;
-  transition: 0.2s;
+.navigation li:hover {
+  color: var(--color-orange);
+  transition: all 0.3s;
 }
 
-.menu a:hover {
-  color: #ff000d;
+/*<-- dark mode toggler--> */
+#darkmode:checked + .wrapper {
+  background: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+#darkmode {
+  display: none;
 }
 
 /*<!--hero section -->*/
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0;
+}
 
 /* <!--banner section -->*/
 
