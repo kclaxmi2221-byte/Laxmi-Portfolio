@@ -112,6 +112,10 @@ button:hover {
 #darkmode:checked + .wrapper {
   background: var(--dark-bg);
   color: var(--dark-text-color);
+  --muted: #bbbbbb;
+  --card-bg: #2a2a2a;
+  --border: #3a3a3a;
+  --body-bg: var(--dark-bg);
 }
 
 #darkmode {
